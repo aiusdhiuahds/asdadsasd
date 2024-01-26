@@ -1,0 +1,85 @@
+/* Reset CSS */
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+    list-style: none;
+}
+
+/* Set default font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Set default line height */
+body,
+button,
+input,
+select,
+textarea {
+    line-height: 1.6;
+}
+
+/* Remove text decoration on links */
+a {
+    text-decoration: none;
+}
+
+/* Remove border on images */
+img {
+    border-style: none;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove outline on active elements */
+a,
+button,
+input,
+select,
+textarea,
+:focus {
+    outline: 0;
+}
+
+/* Add custom styling for your specific needs */
+/* ... */

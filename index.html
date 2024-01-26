@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/vars.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Decodificador - OracleOne</title>
+</head>
+<body>
+    <div class="sidebar__logo">
+        <img src="src/assets/Logo.png" alt="">
+    </div>
+    <div class="decod__main">
+        <div class="decod__text">
+            <textarea id="decod-txt" placeholder="Digite seu texto" required maxlength="952"></textarea>
+        </div>
+        <div class="aviso">
+            <span class="fa fa-circle-exclamation"></span>
+            <span>Apenas letras minúsculas e sem acento.</span>
+        </div>
+        <div class="decod__btns">
+            <button class="btn btn-background" onclick="criptografar();">
+                <p class="text cripto">Criptografar</p>
+            </button>
+            <button class="btn btn-transparente" onclick="descriptografar();">
+                <p class="text descripto">Descriptogravar</p>
+            </button>
+        </div>
+    </div>
+    <div class="decod__result">
+        <div class="results__contents">
+            <textarea id="result-txt" readonly></textarea>
+            <button class="btn btn-transparente" id="btn-copy" onclick="copy()"><p class="text" id="btn-txtcopy">Copiar</p></button>
+        </div>
+    </div>
+    <footer>
+        <div class="menu__credenciais on" id="menu-container">
+            <button class="fa fa-angle-down fa-2x menu-btn open" id="btn-content" onclick="menuAction();"></button>
+            <div class="credenciais__content" id="cred-content">
+                <img src="https://avatars.githubusercontent.com/u/71294319?s=400&u=2c5c704ea86cf89b12b96fbc6735bd44e1338f13&v=4" alt="" class="menu-pfp">
+                <span class="menu-txt">Giovani Fogarolli</span>
+                <a href="https://www.linkedin.com/in/giovanifogarolli/" target="_blank" class="fa-brands fa-linkedin fa-2x"></a>
+                <a href="https://github.com/giovanifogarolli" target="_blank" class="fa-brands fa-github fa-2x"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

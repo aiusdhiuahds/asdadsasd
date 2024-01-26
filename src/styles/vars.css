@@ -1,0 +1,11 @@
+:root{
+
+    /*Fontes*/
+    --default-fontf: Inter;
+
+    /*Cores*/
+    --ph-color:rgba(10,56,113,0.8);
+    --Dark-blue:#0A3871;
+    --Grey-txt:#495057;
+    
+}
