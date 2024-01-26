@@ -1,16 +1,21 @@
 var txtinput = document.getElementById("decod-txt");
-var txtouput = document.getElementById("result-txt")
+var txtouput = document.getElementById("result-txt");
+var divhidden = document.getElementById("no-msg")
 
 console.log("txtinput")
 
 function criptografar(){
     var txtcripto = txtinput.value.toLowerCase().replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
     txtouput.innerHTML = txtcripto
+    divhidden.classList.add("hidden")
+    txtouput.classList.remove("hidden")
 }
 
 function descriptografar(){
     var txtdescripto = txtinput.value.toLowerCase().replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u")
     txtouput.innerHTML = txtdescripto
+    divhidden.classList.add("hidden")
+    txtouput.classList.remove("hidden")
 }
 
 function copy() {
@@ -18,6 +23,8 @@ function copy() {
     copyText.select();
     document.execCommand("copy");
     alert("Copiado com sucesso")
+    divhidden.classList.remove("hidden")
+    txtouput.classList.add("hidden")
   }
 
 
